@@ -73,7 +73,8 @@ public class Problema03 {
                             + "Tipo de empleado: %.0f\n"
                             + "Numero de horas trabajadas: %.2f\n"
                             + "Cuota que se le paga por hora: %.2f\n"
-                            + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado, horasTrabajadas,
+                            + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado,
+                            horasTrabajadas,
                             cuotaHora, totalPagar);
                 } else {
                     if (tipoEmpleado == 2 && horasTrabajadas > 40) {
@@ -86,7 +87,8 @@ public class Problema03 {
                                 + "Tipo de empleado: %.0f\n"
                                 + "Numero de horas trabajadas: %.2f\n"
                                 + "Cuota que se le paga por hora: %.2f\n"
-                                + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado, horasTrabajadas,
+                                + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado,
+                                horasTrabajadas,
                                 cuotaHora, totalPagar);
                     } else {
                         if (tipoEmpleado == 3 && horasTrabajadas > 40) {
