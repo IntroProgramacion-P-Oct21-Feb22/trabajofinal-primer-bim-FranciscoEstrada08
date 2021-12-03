@@ -43,7 +43,7 @@ public class Problema08 {
             pies = medidaMetros * 3.28084;
             
             cadenaTitulos = ("|  METROS  |  YARDAS  |  PULGADAS  |  PIES  |");
-            cadena1 = String.format("%s\n |  %s  | %.2f  | %2.f |  %2.f  ",
+            cadena1 = String.format("%s\n |  %s  | %.2f  | %.2f |  %.2f  ",
                     cadena1,medidaMetros,yardas,pulgadas,pies);
             
             System.out.println(cadena1);
