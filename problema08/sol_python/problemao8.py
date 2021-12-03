@@ -11,7 +11,7 @@ while( bandera == "Si"):
     pulgadas = (medida_metros * 39.3701)/1
 
     pies = (medida_metros * 3.28084)/1
-    #cadena_1 = medida_metros, medida_yardas, medida_pulgadas, medida_pies
+    
     cadena_2 = ("|  Metros  |  yardas  |  Pulgadas  |  Pies   |")
     cadena_1 = ("%s\n|    %s   |   %.2f   |   %.2f   |   %.2f   |"
                 %(cadena_1, medida_metros, yardas, pulgadas, pies))
