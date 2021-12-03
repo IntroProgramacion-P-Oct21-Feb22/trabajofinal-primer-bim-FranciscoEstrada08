@@ -1,10 +1,8 @@
-#porcentajes
+#porcentajes de descuento
 porcentaje1=20
 porcentaje2=25
 porcentaje3=40
 porcentaje4=50
-
-
 
 cantidadTrajes=int(input("Ingrese la cantidad de trajes a comprar: "))
 precioUnitario=float(input("Ingrese el precio unitario: "))

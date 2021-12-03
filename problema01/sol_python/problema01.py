@@ -10,4 +10,4 @@ if (angulo1 > 90 and angulo1 < 180) or (angulo2 > 90 and angulo2 < 180) or (angu
 
 if angulo1 < 90 and angulo2 < 90 and angulo3 and 90:
     print("El tipo de trinagulo es: Rectangulo")
-else: print("Los datos no corresponden o ningun triangulo")
+else: print("Los datos no corresponden a ningun triangulo")

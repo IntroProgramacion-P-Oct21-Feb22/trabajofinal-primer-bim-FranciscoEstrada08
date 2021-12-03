@@ -1,5 +1,5 @@
-corX = float(input("Ingrese la coordenada X"))
-corY = float(input("Ingrese la coordenda Y"))
+corX = float(input("Ingrese la coordenada X: "))
+corY = float(input("Ingrese la coordenda Y: "))
 
 if corX==0 and corY==0:
     print("La coordenda esta en el centro del plano")

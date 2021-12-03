@@ -10,13 +10,13 @@ horastrabajadas = int(input("Ingrese las horas trabajadas: "))
 cuotaHora = int(input("Ingrese el valor de la cuota por hora: "))
 
 pagoparcial = (cuotaHora * horastrabajadas)
-horasextratrabajadas = (horastrabajadas - 40)
+horasextra = (horastrabajadas - 40)
 
 
-cuotaextra1 = (horasextratrabajadas * extra1)
-cuotaextra2 = (horasextratrabajadas * extra2)
-cuotaextra3 = (horasextratrabajadas * extra3)
-cuotaextra4 = (horasextratrabajadas * extra4)
+cuotaextra1 = (horasextra * extra1)
+cuotaextra2 = (horasextra * extra2)
+cuotaextra3 = (horasextra * extra3)
+cuotaextra4 = (horasextra * extra4)
 
 print("\n\nCálculo de sueldo\n" "Horas trabajadas: ", horastrabajadas,"\n" + "Cuota por hora: ", cuotaHora,"\n"+ "Sueldo parcial: ", pagoparcial)
 

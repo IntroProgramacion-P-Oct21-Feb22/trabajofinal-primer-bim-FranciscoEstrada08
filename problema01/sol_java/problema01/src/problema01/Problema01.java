@@ -28,10 +28,10 @@ public class Problema01 {
         System.out.println("Ingrese el primer angulo del triangulo");
         angulo1 = entrada.nextInt();
 
-        System.out.println("Ingrese el primer angulo del triangulo");
+        System.out.println("Ingrese el segundo angulo del triangulo");
         angulo2 = entrada.nextInt();
 
-        System.out.println("Ingrese el primer angulo del triangulo");
+        System.out.println("Ingrese el tercer angulo del triangulo");
         angulo3 = entrada.nextInt();
 
         if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90) {
