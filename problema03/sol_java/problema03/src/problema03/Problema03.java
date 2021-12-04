@@ -53,9 +53,8 @@ public class Problema03 {
         if (tipoEmpleado <= 0 || tipoEmpleado > 4 || horasTrabajadas <= 0) {
             System.out.println("Por favor ingrese datos válidos");
         } else {
-            if ((tipoEmpleado == 1 || tipoEmpleado == 2 || tipoEmpleado == 3 || tipoEmpleado == 4)
-                    && horasTrabajadas < 40) {
-                subtotal = horasTrabajadas * cuota1;
+            if (horasTrabajadas <= 40) {
+                subtotal = horasTrabajadas * cuotaHora;
                 System.out.printf("Nombre del empleado: %s\n"
                         + "Tipo de empleado: %.0f\n"
                         + "Numero de horas trabajadas: %.2f\n"
@@ -63,24 +62,20 @@ public class Problema03 {
                         + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado, horasTrabajadas,
                         cuotaHora, subtotal);
             } else {
-                if (tipoEmpleado == 1 && horasTrabajadas > 40) {
-                    subtotal = 40 * cuotaHora;
-                    horasExtra = horasTrabajadas - 40;
-                    valorHorasExtra = (cuotaHora * cuota1) * horasExtra;
-                    totalPagar = valorHorasExtra + subtotal;
-
+                if ((tipoEmpleado == 1 || tipoEmpleado == 2 || tipoEmpleado == 3 || tipoEmpleado == 4)
+                        && horasTrabajadas < 40) {
+                    subtotal = horasTrabajadas * cuota1;
                     System.out.printf("Nombre del empleado: %s\n"
                             + "Tipo de empleado: %.0f\n"
                             + "Numero de horas trabajadas: %.2f\n"
                             + "Cuota que se le paga por hora: %.2f\n"
-                            + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado,
-                            horasTrabajadas,
-                            cuotaHora, totalPagar);
+                            + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado, horasTrabajadas,
+                            cuotaHora, subtotal);
                 } else {
-                    if (tipoEmpleado == 2 && horasTrabajadas > 40) {
+                    if (tipoEmpleado == 1 && horasTrabajadas > 40) {
                         subtotal = 40 * cuotaHora;
                         horasExtra = horasTrabajadas - 40;
-                        valorHorasExtra = (cuotaHora * cuota2) * horasExtra;
+                        valorHorasExtra = (cuotaHora * cuota1) * horasExtra;
                         totalPagar = valorHorasExtra + subtotal;
 
                         System.out.printf("Nombre del empleado: %s\n"
@@ -91,24 +86,24 @@ public class Problema03 {
                                 horasTrabajadas,
                                 cuotaHora, totalPagar);
                     } else {
-                        if (tipoEmpleado == 3 && horasTrabajadas > 40) {
+                        if (tipoEmpleado == 2 && horasTrabajadas > 40) {
                             subtotal = 40 * cuotaHora;
                             horasExtra = horasTrabajadas - 40;
-                            valorHorasExtra = (cuotaHora * cuota3) * horasExtra;
+                            valorHorasExtra = (cuotaHora * cuota2) * horasExtra;
                             totalPagar = valorHorasExtra + subtotal;
 
                             System.out.printf("Nombre del empleado: %s\n"
                                     + "Tipo de empleado: %.0f\n"
                                     + "Numero de horas trabajadas: %.2f\n"
                                     + "Cuota que se le paga por hora: %.2f\n"
-                                    + "Sueldo por pagar: %.2f\n", nombre,
-                                    tipoEmpleado, horasTrabajadas,
+                                    + "Sueldo por pagar: %.2f\n", nombre, tipoEmpleado,
+                                    horasTrabajadas,
                                     cuotaHora, totalPagar);
                         } else {
-                            if (tipoEmpleado == 4 && horasTrabajadas > 40) {
+                            if (tipoEmpleado == 3 && horasTrabajadas > 40) {
                                 subtotal = 40 * cuotaHora;
                                 horasExtra = horasTrabajadas - 40;
-                                valorHorasExtra = (cuotaHora * cuota4) * horasExtra;
+                                valorHorasExtra = (cuotaHora * cuota3) * horasExtra;
                                 totalPagar = valorHorasExtra + subtotal;
 
                                 System.out.printf("Nombre del empleado: %s\n"
@@ -118,6 +113,21 @@ public class Problema03 {
                                         + "Sueldo por pagar: %.2f\n", nombre,
                                         tipoEmpleado, horasTrabajadas,
                                         cuotaHora, totalPagar);
+                            } else {
+                                if (tipoEmpleado == 4 && horasTrabajadas > 40) {
+                                    subtotal = 40 * cuotaHora;
+                                    horasExtra = horasTrabajadas - 40;
+                                    valorHorasExtra = (cuotaHora * cuota4) * horasExtra;
+                                    totalPagar = valorHorasExtra + subtotal;
+
+                                    System.out.printf("Nombre del empleado: %s\n"
+                                            + "Tipo de empleado: %.0f\n"
+                                            + "Numero de horas trabajadas: %.2f\n"
+                                            + "Cuota que se le paga por hora: %.2f\n"
+                                            + "Sueldo por pagar: %.2f\n", nombre,
+                                            tipoEmpleado, horasTrabajadas,
+                                            cuotaHora, totalPagar);
+                                }
                             }
                         }
                     }
@@ -125,5 +135,4 @@ public class Problema03 {
             }
         }
     }
-
 }
